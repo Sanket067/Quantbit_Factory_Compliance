@@ -247,3 +247,30 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+fixtures = [
+    {
+        "dt": "Number Card",
+        "filters": [
+            ["name", "in", [
+                "Completed This Month",
+                "Overdue Compliances",
+                "Due in Next 30 Days",
+                "High Risk Compliance"
+            ]]
+        ]
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [
+            ["name", "in", [
+                "Compliance Status",
+                "Compliance by Authority",
+                "Risk Level",
+                "Compliance by Factory"
+            ]]
+        ]
+    }
+]
+
+
